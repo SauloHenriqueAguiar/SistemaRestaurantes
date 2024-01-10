@@ -1,0 +1,20 @@
+{
+ "version": "0.0.1",
+ "tasks": [
+   {
+     "label": "Build C++",
+     "type": "shell",
+     "command": "g++",  // ou o comando do seu compilador, como "clang++" ou "cl" (para MSVC)
+     "args": [
+       "-g",           // Adicione opções de compilação aqui, como depuração (-g)
+       "SystemRestaurante.cpp",  // Substitua pelo nome do seu arquivo C++
+       "-o",
+       "SystemRestaurante.exe" // Substitua pelo nome desejado do executável
+     ],
+     "group": {
+       "kind": "build",
+       "isDefault": true
+     }
+   }
+ ]
+}
